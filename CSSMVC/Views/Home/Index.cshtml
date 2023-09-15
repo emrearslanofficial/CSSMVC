@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Emre Arslan";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Emre Arslan</title>
+    <style>
+        .header {
+            text-align: center;
+            background-color: lightseagreen;
+            color: whitesmoke;
+            padding: 50px;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: black;
+        }
+
+            .navbar a {
+                padding: 14px 20px;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .navbar a:hover {
+                    background-color: dimgray;
+                }
+
+        .row {
+            display: flex;
+        }
+
+        .side {
+            flex: 30%;
+            background-color:#f1f2f2;
+            padding:20px;
+        }
+
+        .main {
+            flex: 70%;
+            padding:20px;
+        }
+
+        .fakeimg {
+            background-color: dimgray;
+            padding:15px;
+            margin-top:8px;
+        }
+        .main .fakeimg{
+            height:150px;
+        }
+        .footer {
+            background-color: #f1f2f2;
+            text-align:center;
+            padding:13px;
+        }
+        @@media screen and (max-width:700px){
+            .row, .navbar{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style=" background-color:antiquewhite; padding:6px;">
+        <h4 style="text-align:center">Web sitemize hoşgeldiniz. Bu bölümde döviz kurları yer alacaktır.</h4>
+    </div>
+    <div class="header">
+        <h1>Emmedya</h1>
+        <p>Güncel <b>yararlı</b> bilgiler</p>
+    </div>
+    <div class="navbar">
+        <a href="">Instagram</a>
+        <a href="">Twitter</a>
+        <a href="">Github</a>
+        <a href="">LınkedIn</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Hakkımda</h2>
+            <h5>Fotoğrafım</h5>
+            <div class="fakeimg" style="height:150px">image</div>
+            <p>Ben Emre Arslan.</p>
+
+            <h3>Diğer Yazılar</h3>
+            <div class="fakeimg" style="height:40px;">image</div>
+            <div class="fakeimg" style="height:40px;">image</div>
+            <div class="fakeimg" style="height:40px;">image</div>
+        </div>
+        <div class="main">
+            <h2>NASA Uzaylıların Varlığını Kabul Etti!</h2>
+            <p>Eylül 15, 2023</p>
+            <div class="fakeimg">image</div>
+            <p>Son günlerde Nasa tarafında ilginç şeyler oluyordu. Meksika uzay bilimcileri insan dışı DNA'ya sahip olduklarını iddia eden bir cismin fosilini yayınlamıştı.</p>
+            <br />
+            <h2>NASA Uzaylıların Varlığını Kabul Etti!</h2>
+            <p>Eylül 15, 2023</p>
+            <div class="fakeimg">image</div>
+            <p>Son günlerde Nasa tarafında ilginç şeyler oluyordu. Meksika uzay bilimcileri insan dışı DNA'ya sahip olduklarını iddia eden bir cismin fosilini yayınlamıştı.</p>
+
+        </div>
+    </div>
+    <div class="footer">
+        <H1>FOOTER</H1>
+    </div>
+</body>
+</html>
+
