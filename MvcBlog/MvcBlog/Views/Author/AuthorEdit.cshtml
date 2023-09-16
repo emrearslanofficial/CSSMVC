@@ -1,0 +1,91 @@
+﻿@model EntityLayer.Concrete.Author
+@{
+    ViewBag.Title = "AuthorEdit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <form class="form-group" method="post">
+        <div class="wrapper">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Yazar Hakkında</h3>
+
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="inputName">Adı Soyadı</label>
+                                    @Html.TextBoxFor(x => x.AuthorName, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputDescription">Yazar Hakkında</label>
+                                    @Html.TextAreaFor(x => x.AuthorAbout,10,20, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputClientCompany">Yazar Başlığı</label>
+                                    @Html.TextBoxFor(x=>x.AuthorTitle, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputProjectLeader">Hakkında Kısa Bilgiler</label>
+                                    @Html.TextBoxFor(x => x.AboutShort, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputProjectLeader">Resim Yolu</label>
+                                    @Html.TextBoxFor(x => x.AuthorImage, new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h3 class="card-title">Yazar Bilgileri</h3>
+
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="inputEstimatedBudget">Mail Adresi</label>
+                                    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputSpentBudget">Şifresi</label>
+                                    @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEstimatedDuration">Telefon Numarası</label>
+                                    @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+                                </div>
+                                <div style="visibility:hidden;" class="form-group">
+                                    <label for="inputEstimatedDuration">Telefon Numarası</label>
+                                    @Html.TextBoxFor(x => x.AuthorId, new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="submit" value="Kaydet" class="btn btn-success float-right">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </form>
+</body>
+</html>
+

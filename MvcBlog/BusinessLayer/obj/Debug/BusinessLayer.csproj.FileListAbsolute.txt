@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\EntityLayer.dll
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\PC\source\repos\MvcBlog\BusinessLayer\obj\Debug\BusinessLayer.pdb
