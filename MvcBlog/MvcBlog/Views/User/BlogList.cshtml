@@ -1,0 +1,79 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Blog>
+@{
+    ViewBag.Title = "BlogList";
+    Layout = "~/Views/Shared/_AuthorLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <a href="/User/AddNewBlog/" style="text-align:right;" class="btn btn-primary">Yeni Yazı Ekle</a>
+        <br /> <br />
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Bloglar</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-striped projects">
+                    <thead>
+                        <tr>
+                            <th style="width: 1%">ID</th>
+                            <th style="width: 20%">Blog Başlığı</th>
+                            <th style="width: 30%">Yazar</th>
+                            <th>Beğeni Oranı</th>
+                            <th style="width: 8%" class="text-center">Kategori</th>
+                            <th style="width: 20%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.BlogId</td>
+                                <td><b><a>@item.BlogTitle</a></b></td>
+                                <td>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <img alt="Avatar" class="table-avatar" src="@item.Author.AuthorImage">
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <b>@item.Author.AuthorName</b>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="project_progress">
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-green" role="progressbar" aria-volumenow="@item.BlogRating" aria-volumemin="0" aria-volumemax="100" style="width: @item.BlogRating%">
+                                        </div>
+                                    </div>
+                                    <small>
+                                        Toplam puan: @item.BlogRating
+                                    </small>
+                                </td>
+                                <td class="project-state">
+                                    <span class="badge badge-info">@item.Category.CategoryName</span>
+                                </td>
+                                <td class="project-actions text-right">
+                                    <a target="_blank" href="/Blog/BlogDetails/@item.BlogId" class="float-right btn-tool"><i title="Gözat" class="fas fa-eye"></i></a>
+                                    <a href="/User/UpdateBlog/@item.BlogId" class="float-right btn-tool"><i title="Düzenle" class="fas fa-edit"></i></a>
+                                    <a href="/User/DeleteBlog/@item.BlogId" class="float-right btn-tool"><i title="Sil" class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
